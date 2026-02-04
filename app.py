@@ -63,7 +63,8 @@ def convert_audiobooks(root_dir):
 
 if __name__ == "__main__":
     target_folder = "."
-    confirm = input(f"Convert all audiobooks in '{os.path.abspath(target_folder)}' to Opus and DELETE originals? (y/n): ")
+    print("\n Note: Make sure you have setup the app.py file correctly and it is in right location. \n")
+    confirm = input(f"Convert all Audio Files in '{os.path.abspath(target_folder)}' to Opus and DELETE originals? (y/n): ")
     if confirm.lower() == 'y':
         convert_audiobooks(target_folder)
     else:
